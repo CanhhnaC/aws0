@@ -6,15 +6,29 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "codemirror": "^5.57.0",
+    "history": "^5.0.0",
+    "marked": "^1.1.1",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
+    "react-codemirror": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-loadable": "^5.5.0",
+    "react-markdown": "^4.3.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-virtualized": "^9.22.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "yarn run build && aws s3 cp build/ s3://queen-audio.com --recursive"
   },
   "eslintConfig": {
     "extends": "react-app"
